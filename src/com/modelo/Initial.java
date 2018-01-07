@@ -8,7 +8,7 @@ public class Initial {
 
 		Session session = new HibernateModel().getSessionFactory().openSession();
 		session.beginTransaction();
-		
+		session.close();
 		
 
 	}
