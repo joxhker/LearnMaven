@@ -13,19 +13,25 @@ public class HibernateModel {
 		try {
 
 			Configuration config = new Configuration();
+			
 			// Classes
-			config.addAnnotatedClass(User.class);
+				config.addAnnotatedClass(User.class);
+			
 			// properties
-			config.setProperty("connection.driver_class", "com.mysql.jdbc.Driver");
-			config.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/prueba");
-			config.setProperty("hibernate.connection.username", "root");
-			config.setProperty("hibernate.connection.password", "");
-			config.setProperty("dialect", "org.hibernate.dialect.MySQL5Dialect");
+				config.setProperty("connection.driver_class", "com.mysql.jdbc.Driver");
+				config.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/prueba");
+				config.setProperty("hibernate.connection.username", "root");
+				config.setProperty("hibernate.connection.password", "");
+				config.setProperty("dialect", "org.hibernate.dialect.MySQL5Dialect");
+				config.setProperty("show_sql", "true");
 			//config.setProperty("hibernate.hbm2ddl.auto", "update");
-			config.setProperty("show_sql", "true");
 			// config.setProperty(" hibernate.connection.pool_size", "10");
+			
+			
+
 			// constructor
-			return config.buildSessionFactory(new StandardServiceRegistryBuilder().build());
+			return config.buildSessionFactory(new StandardServiceRegistryBuilder()
+					.applySettings(config.getProperties()).build());
 
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -18,7 +18,7 @@ public class User {
 	@Column(name = "USER_ID")
 	private Long userID;
 
-	@Column(name = "FIST_NAME")
+	@Column(name = "FIRST_NAME")
 	private String fistName;
 
 	@Column(name = "LAST_NAME")
@@ -30,10 +30,10 @@ public class User {
 	@Column(name = "EMAIL_ADDRESS")
 	private String emailAddress;
 
-	@Column(name = "LAST_UPDATE_BY")
+	@Column(name = "LAST_UPDATED_BY")
 	private String lastUpdateBy;
 
-	@Column(name = "LAST_UPDATE_DATE")
+	@Column(name = "LAST_UPDATED_DATE")
 	private Date lastUpdatedDate;
 
 	@Column(name = "CREATED_BY")
@@ -54,7 +54,7 @@ public class User {
 	@Column(name = "STATE")
 	private String state;
 
-	@Column(name = "ZIPCODE")
+	@Column(name = "ZIP_CODE")
 	private String zipCode;
 
 	public Long getUserID() {
@@ -169,4 +169,14 @@ public class User {
 		this.zipCode = zipCode;
 	}
 
+	@Override
+	public String toString() {
+		return "User [userID=" + userID + ", fistName=" + fistName + ", lastName=" + lastName + ", birthDate="
+				+ birthDate + ", emailAddress=" + emailAddress + ", lastUpdateBy=" + lastUpdateBy + ", lastUpdatedDate="
+				+ lastUpdatedDate + ", createdBy=" + createdBy + ", createdDate=" + createdDate + ", userAddressLine1="
+				+ userAddressLine1 + ", userAdressLine2=" + userAdressLine2 + ", city=" + city + ", state=" + state
+				+ ", zipCode=" + zipCode + "]";
+	}
+
+	
 }
