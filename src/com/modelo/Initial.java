@@ -18,7 +18,6 @@ public class Initial {
 	}
 	private static void insertUser() {
 		session.getTransaction().begin();
-		
 		User us = new User();
 		us.setBirthDate(new Date());
 		us.setCity("Guatemala");
