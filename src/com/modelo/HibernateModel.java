@@ -16,7 +16,7 @@ public class HibernateModel {
 			
 			// Classes
 				config.addAnnotatedClass(User.class);
-			
+			//Netbeans
 			// properties
 				config.setProperty("connection.driver_class", "com.mysql.jdbc.Driver");
 				config.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/pruebas");
