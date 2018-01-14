@@ -20,7 +20,6 @@ public class Initial {
 		session.getTransaction().begin();
 		
 		User us = new User();
-		
 		us.setBirthDate(new Date());
 		us.setCity("Guatemala");
 		us.setCreatedBy("Joshuar");
