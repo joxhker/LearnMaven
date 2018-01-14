@@ -11,12 +11,14 @@ public class Initial {
 	public static void main(String[] args) {
 
 		session = new HibernateModel().getSessionFactory().openSession();
-		insertUser();
+		//insertUser();
 		
 		session.close();
 		
 
 	}
+ 
+         
 	private static void insertUser() {
 		session.getTransaction().begin();
 		
