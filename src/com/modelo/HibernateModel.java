@@ -19,9 +19,9 @@ public class HibernateModel {
 			
 			// properties
 				config.setProperty("connection.driver_class", "com.mysql.jdbc.Driver");
-				config.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/prueba");
+				config.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/pruebas");
 				config.setProperty("hibernate.connection.username", "root");
-				config.setProperty("hibernate.connection.password", "");
+				config.setProperty("hibernate.connection.password", "root");
 				config.setProperty("dialect", "org.hibernate.dialect.MySQL5Dialect");
 				config.setProperty("show_sql", "true");
 			//config.setProperty("hibernate.hbm2ddl.auto", "update");
