@@ -12,7 +12,7 @@ public class Initial {
 
 		session = new HibernateModel().getSessionFactory().openSession();
 		insertUser();
-		
+		//asdfad
 		session.close();
 		
 
