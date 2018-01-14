@@ -13,7 +13,7 @@ public class HibernateModel {
 		try {
 
 			Configuration config = new Configuration();
-			
+			//one try
 			// Classes
 				config.addAnnotatedClass(User.class);
 			
